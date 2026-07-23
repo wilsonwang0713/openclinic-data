@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-07-23T06:08:36Z",
+  "fetched_at": "2026-07-23T06:58:11Z",
   "source": "https://www.blood.org.tw/",
-  "updated": "2026-07-22T07:31:00+08:00",
+  "updated": "2026-07-23T07:31:00+08:00",
   "thresholds": {
     "normal": "庫存量7日以上",
     "low": "庫存量4-7日",
@@ -29,7 +29,7 @@
       "stock": {
         "A": "low",
         "B": "normal",
-        "O": "low",
+        "O": "urgent",
         "AB": "low"
       }
     },
