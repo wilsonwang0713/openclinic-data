@@ -1,0 +1,3 @@
+# blood-scraper 執行相依:只需 requests 做 HTTP 抓取。
+# 解析與離線測試(blood_parser.py / test_scraper.py)為純標準函式庫,零相依。
+requests>=2.31,<3

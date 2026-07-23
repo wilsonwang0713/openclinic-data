@@ -1,0 +1,76 @@
+<!doctype html>
+<!--
+  血庫存量 fixture(離線測試用)— 依 docs/blood-api-research.md §1.2 的真實結構,
+  數值為 2026-07-22 官網實測真值(§4.2)。
+  故意在庫存區塊「前」放一個 class="item1" 的頁首輪播,驗證 gate 不會誤抓。
+-->
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><title>台灣血液基金會</title></head>
+<body>
+
+<!-- 頁首輪播:同樣有 item1 class,但不在 IndexInventory 內,且無血型/中心名 → 應被忽略 -->
+<section class="hero">
+  <ul class="carousel">
+    <li><div class="item item1"><a href="/promo">最新活動快訊</a>
+      <div class="text">熱血活動</div></li>
+  </ul>
+</section>
+
+<section class="IndexInventory">
+  <div class="date">最新更新時間： 2026年07月22日 07時31分</div>
+  <ul class="InventoryList">
+
+    <li><div class="item item1">
+      <div class="titleBar"><span class="deco"></span>
+        <a href="https://www.tp.blood.org.tw/">台北捐血中心</a></div>
+      <ul>
+        <li><div class="text">A</div><div class="icon"><img src="/img/StorageIcon002.svg" alt="偏低"></div></li>
+        <li><div class="text">B</div><div class="icon"><img src="/img/StorageIcon002.svg" alt="偏低"></div></li>
+        <li><div class="text">O</div><div class="icon"><img src="/img/StorageIcon002.svg" alt="偏低"></div></li>
+        <li><div class="text">AB</div><div class="icon"><img src="/img/StorageIcon002.svg" alt="偏低"></div></li>
+      </ul>
+    </div></li>
+
+    <li><div class="item item2">
+      <div class="titleBar">
+        <a href="https://www.sc.blood.org.tw/">新竹捐血中心</a></div>
+      <ul>
+        <li><div class="text">A</div><div class="icon"><img src="/img/StorageIcon002.svg" alt="偏低"></div></li>
+        <li><div class="text">B</div><div class="icon"><img src="/img/StorageIcon003.svg" alt="正常"></div></li>
+        <li><div class="text">O</div><div class="icon"><img src="/img/StorageIcon002.svg" alt="偏低"></div></li>
+        <li><div class="text">AB</div><div class="icon"><img src="/img/StorageIcon002.svg" alt="偏低"></div></li>
+      </ul>
+    </div></li>
+
+    <li><div class="item item3">
+      <div class="titleBar">
+        <a href="https://www.tc.blood.org.tw/">台中捐血中心</a></div>
+      <ul>
+        <li><div class="text">A</div><div class="icon"><img src="/img/StorageIcon001.svg" alt="急缺"></div></li>
+        <li><div class="text">B</div><div class="icon"><img src="/img/StorageIcon001.svg" alt="急缺"></div></li>
+        <li><div class="text">O</div><div class="icon"><img src="/img/StorageIcon001.svg" alt="急缺"></div></li>
+        <li><div class="text">AB</div><div class="icon"><img src="/img/StorageIcon002.svg" alt="偏低"></div></li>
+      </ul>
+    </div></li>
+
+    <li><div class="item item4">
+      <div class="titleBar">
+        <a href="https://www.ks.blood.org.tw/">高雄捐血中心</a></div>
+      <ul>
+        <li><div class="text">A</div><div class="icon"><img src="/img/StorageIcon002.svg" alt="偏低"></div></li>
+        <li><div class="text">B</div><div class="icon"><img src="/img/StorageIcon003.svg" alt="正常"></div></li>
+        <li><div class="text">O</div><div class="icon"><img src="/img/StorageIcon002.svg" alt="偏低"></div></li>
+        <li><div class="text">AB</div><div class="icon"><img src="/img/StorageIcon002.svg" alt="偏低"></div></li>
+      </ul>
+    </div></li>
+
+  </ul>
+  <ul class="info">
+    <li><img src="/img/StorageIcon003.svg" alt="正常"> 庫存量7日以上(正常)</li>
+    <li><img src="/img/StorageIcon002.svg" alt="偏低"> 庫存量4-7日(偏低)</li>
+    <li><img src="/img/StorageIcon001.svg" alt="急缺"> 庫存量4日以下(急缺)</li>
+  </ul>
+</section>
+
+</body>
+</html>

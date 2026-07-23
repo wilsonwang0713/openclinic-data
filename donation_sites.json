@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "fetched_at": "2026-07-23T06:08:36Z",
+  "date": "2026-07-23",
+  "source": "https://www.blood.org.tw/xcevent?Display=Y",
+  "events": [
+    {
+      "sid": "0P350319611345984871",
+      "center_id": "kaohsiung",
+      "type": "station",
+      "name": "東興捐血室",
+      "date": null,
+      "time": "08:30~17:00",
+      "time_desc": "週三~週日",
+      "address": "台南市北區東興路二段47號",
+      "address_note": "",
+      "tel": "06-2092005",
+      "lat": 22.9997488,
+      "lng": 120.2093667
+    },
+    {
+      "sid": "0Q198412199950322712",
+      "center_id": "taipei",
+      "type": "drive",
+      "name": "好事達獅會捐血活動",
+      "date": "2026-07-22",
+      "time": "13:00~21:00",
+      "time_desc": "",
+      "address": "臺北市萬華區峨嵋街83號峨嵋立體停車場旁",
+      "address_note": "配合峨嵋號",
+      "tel": null,
+      "lat": 25.0443243,
+      "lng": 121.5057389
+    },
+    {
+      "sid": "0R000000000000000001",
+      "center_id": "taichung",
+      "type": "mobile",
+      "name": "台中巡迴捐血車",
+      "date": "2026-07-22",
+      "time": "09:00~16:30",
+      "time_desc": "",
+      "address": "臺中市西屯區市政路",
+      "address_note": "",
+      "tel": "04-23058585",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

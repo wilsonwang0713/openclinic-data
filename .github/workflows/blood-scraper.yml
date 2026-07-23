@@ -1,0 +1,94 @@
+# 血庫存量 / 捐血點每日爬蟲(部署於 openclinic-data public repo)
+#
+# 本檔為「開診」主 repo 的 blood-scraper/.github/workflows/ 範本;
+# 部署時複製到 openclinic-data repo 根目錄的 .github/workflows/,並把爬蟲程式放在
+# openclinic-data/scraper/(見 blood-scraper/README.md 的部署佈局)。
+#
+# 產物 blood_stock.json / donation_sites.json commit 進 repo 根目錄,
+# app 讀 https://raw.githubusercontent.com/wilsonwang0713/openclinic-data/main/blood_stock.json
+#
+# keep-last-good:解析失敗時爬蟲以非零碼結束且不覆寫 JSON → 本 job 失敗告警、
+# 上一版 JSON 原封不動保留(app 端顯示最後更新時間,不 crash 不空白)。
+
+name: blood-scraper
+
+on:
+  schedule:
+    # 官網每日約 07:31(台北)更新;抓兩班以涵蓋急缺日內加更(cron 為 UTC)
+    - cron: "30 0 * * *"   # 08:30 台北
+    - cron: "30 8 * * *"   # 16:30 台北
+  workflow_dispatch: {}
+
+# 需 contents:write 提交產物;issues:write 供失敗時開/更新告警 issue
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: blood-scraper
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安裝相依
+        run: pip install -r scraper/requirements.txt
+
+      - name: 離線測試(擋程式碼回歸,不連網)
+        working-directory: scraper
+        run: python -m unittest -v
+
+      - name: 抓血庫存量 → blood_stock.json
+        run: python scraper/scrape_stock.py --out blood_stock.json
+
+      - name: 抓捐血點 → donation_sites.json(可選;失敗不擋整體)
+        continue-on-error: true
+        run: python scraper/scrape_sites.py --out donation_sites.json
+
+      - name: 有變更才 commit
+        run: |
+          if git diff --quiet -- blood_stock.json donation_sites.json; then
+            echo "無變更,略過 commit"
+            exit 0
+          fi
+          git config user.name  "blood-scraper-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add blood_stock.json donation_sites.json
+          git commit -m "chore(data): 更新血庫存量 $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
+
+      # 失敗告警(research §4.4:changjonathanc 斷更 16 個月無人知,必須主動告警)
+      - name: 失敗時開/更新告警 issue
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "⚠️ blood-scraper 抓取失敗(疑似官網改版)";
+            const body = [
+              `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              "",
+              "血庫爬蟲以非零碼結束(結構斷言未過 / 抓取失敗)。",
+              "已 keep-last-good:未覆寫既有 JSON。請檢查官網是否改版,對照 docs/blood-api-research.md。",
+            ].join("\n");
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: "open", labels: "blood-scraper",
+            });
+            if (existing.data.length > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: existing.data[0].number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ["blood-scraper"],
+              });
+            }

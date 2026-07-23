@@ -1,0 +1,30 @@
+<!doctype html>
+<!--
+  捐血點 fixture(離線測試用)— 依 docs/blood-api-research.md §3.1 的 var Data 結構。
+  含固定點(EventType=1)、巡迴車(2)、捐血活動(3)、一筆 0,0 座標與一筆缺名稱(應被略過)。
+-->
+<html lang="zh-Hant"><head><meta charset="utf-8"></head><body>
+<div id="map"></div>
+<script>
+var Data = [
+  {"SId":{"Value":"0P350319611345984871"},"SiteId":"D22","CenterId":"7",
+   "ActivityName":"東興捐血室","DonationDate":null,"DonationTime":"08:30~17:00",
+   "DonationTimeDesc":"週三~週日","EventType":1,
+   "ActivityPlace":"台南市北區東興路二段47號","ActivityPlaceDesc":"","Tel":"06-2092005",
+   "Desc":"週一、週二暫停作業。歡迎預約分離術。備註內含 ]; 也不能截錯","Pos":{"lat":22.9997488,"lng":120.2093667}},
+  {"SId":{"Value":"0Q198412199950322712"},"SiteId":"","CenterId":"2",
+   "ActivityName":"好事達獅會捐血活動","DonationDate":"2026-07-22","DonationTime":"13:00~21:00",
+   "DonationTimeDesc":"","EventType":3,
+   "ActivityPlace":"臺北市萬華區峨嵋街83號峨嵋立體停車場旁","ActivityPlaceDesc":"配合峨嵋號","Tel":"",
+   "Pos":{"lat":25.0443243,"lng":121.5057389}},
+  {"SId":{"Value":"0R000000000000000001"},"SiteId":"M07","CenterId":"4",
+   "ActivityName":"台中巡迴捐血車","DonationDate":"2026-07-22","DonationTime":"09:00~16:30",
+   "DonationTimeDesc":"","EventType":2,
+   "ActivityPlace":"臺中市西屯區市政路","ActivityPlaceDesc":"","Tel":"04-23058585",
+   "Pos":{"lat":0,"lng":0}},
+  {"SId":{"Value":"0R000000000000000002"},"SiteId":"","CenterId":"3",
+   "ActivityName":"","DonationDate":"2026-07-22","DonationTime":"","DonationTimeDesc":"",
+   "EventType":3,"ActivityPlace":"","ActivityPlaceDesc":"","Tel":"","Pos":null}
+];
+</script>
+</body></html>
