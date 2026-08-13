@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-08-12T03:03:18Z",
+  "fetched_at": "2026-08-13T09:37:42Z",
   "source": "https://www.blood.org.tw/",
-  "updated": "2026-08-12T07:31:00+08:00",
+  "updated": "2026-08-13T07:31:00+08:00",
   "thresholds": {
     "normal": "庫存量7日以上",
     "low": "庫存量4-7日",
@@ -15,9 +15,9 @@
       "coverage": "基隆/雙北/宜蘭/花蓮/金馬",
       "url": "https://www.tp.blood.org.tw/",
       "stock": {
-        "A": "low",
+        "A": "urgent",
         "B": "low",
-        "O": "low",
+        "O": "urgent",
         "AB": "low"
       }
     },
@@ -39,8 +39,8 @@
       "coverage": "中彰投",
       "url": "https://www.tc.blood.org.tw/",
       "stock": {
-        "A": "low",
-        "B": "low",
+        "A": "urgent",
+        "B": "urgent",
         "O": "urgent",
         "AB": "low"
       }
@@ -51,7 +51,7 @@
       "coverage": "雲嘉南/高屏/澎東",
       "url": "https://www.ks.blood.org.tw/",
       "stock": {
-        "A": "low",
+        "A": "urgent",
         "B": "normal",
         "O": "low",
         "AB": "low"
