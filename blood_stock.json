@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-08-14T09:33:02Z",
+  "fetched_at": "2026-08-15T01:55:02Z",
   "source": "https://www.blood.org.tw/",
-  "updated": "2026-08-14T07:31:00+08:00",
+  "updated": "2026-08-15T07:31:00+08:00",
   "thresholds": {
     "normal": "庫存量7日以上",
     "low": "庫存量4-7日",
@@ -16,7 +16,7 @@
       "url": "https://www.tp.blood.org.tw/",
       "stock": {
         "A": "urgent",
-        "B": "low",
+        "B": "urgent",
         "O": "urgent",
         "AB": "low"
       }
@@ -52,7 +52,7 @@
       "url": "https://www.ks.blood.org.tw/",
       "stock": {
         "A": "urgent",
-        "B": "normal",
+        "B": "low",
         "O": "urgent",
         "AB": "low"
       }
