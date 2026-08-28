@@ -1,9 +1,23 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-08-27T19:10:11Z",
+  "fetched_at": "2026-08-28T11:35:25Z",
   "date": "2026-08-28",
   "source": "https://www.blood.org.tw/xcevent?Display=Y",
   "events": [
+    {
+      "sid": "0Q240302915754583862",
+      "center_id": "taipei",
+      "type": "drive",
+      "name": "台北市愛馨獅子會",
+      "date": "2026-08-28",
+      "time": "08:00~17:30",
+      "time_desc": "",
+      "address": "臺北市中正區南海路1號3樓",
+      "address_note": "捷運中正紀念堂1號出口、配合南海室",
+      "tel": null,
+      "lat": null,
+      "lng": null
+    },
     {
       "sid": "0Q233382269776833167",
       "center_id": "taipei",
