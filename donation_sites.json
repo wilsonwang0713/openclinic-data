@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-11-03T16:22:42Z",
+  "fetched_at": "2026-11-04T06:47:43Z",
   "date": "2026-11-04",
   "source": "https://www.blood.org.tw/xcevent?Display=Y",
   "events": [
@@ -20,7 +20,7 @@
     },
     {
       "sid": "0Q303503965832285509",
-      "center_id": "taipei",
+      "center_id": "hsinchu",
       "type": "drive",
       "name": "聯發科技股份有限公司",
       "date": "2026-11-04",
@@ -90,7 +90,7 @@
     },
     {
       "sid": "0Q303503960560891096",
-      "center_id": "taipei",
+      "center_id": "hsinchu",
       "type": "drive",
       "name": "聯發科技股份有限公司",
       "date": "2026-11-04",
