@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-11-11T16:24:42Z",
+  "fetched_at": "2026-11-12T07:29:07Z",
   "date": "2026-11-12",
   "source": "https://www.blood.org.tw/xcevent?Display=Y",
   "events": [
@@ -14,20 +14,6 @@
       "time_desc": "",
       "address": "臺北市文山區興隆路三段56號",
       "address_note": "格致樓前",
-      "tel": null,
-      "lat": null,
-      "lng": null
-    },
-    {
-      "sid": "0Q310561638219157059",
-      "center_id": "taipei",
-      "type": "drive",
-      "name": "東華大學",
-      "date": "2026-11-12",
-      "time": "10:30~16:00",
-      "time_desc": "",
-      "address": "花蓮東華大學湖畔餐廳前",
-      "address_note": "",
       "tel": null,
       "lat": null,
       "lng": null
