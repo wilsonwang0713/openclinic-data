@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-11-17T17:43:05Z",
+  "fetched_at": "2026-11-18T07:47:25Z",
   "date": "2026-11-18",
   "source": "https://www.blood.org.tw/xcevent?Display=Y",
   "events": [
@@ -476,20 +476,6 @@
       "time_desc": "",
       "address": "桃園市龜山區復興街5號",
       "address_note": "林口長庚醫院醫學大樓地下街",
-      "tel": null,
-      "lat": null,
-      "lng": null
-    },
-    {
-      "sid": "0Q300544499855918797",
-      "center_id": "hsinchu",
-      "type": "drive",
-      "name": "桃園市巾幗獅子會",
-      "date": "2026-11-18",
-      "time": "09:30~16:30",
-      "time_desc": "",
-      "address": "桃園市中壢區中央東路88號16樓",
-      "address_note": "中壢捐血室",
       "tel": null,
       "lat": null,
       "lng": null
