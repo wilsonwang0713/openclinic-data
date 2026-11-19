@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-11-18T17:24:15Z",
+  "fetched_at": "2026-11-19T07:42:54Z",
   "source": "https://www.blood.org.tw/",
-  "updated": "2026-11-18T07:31:00+08:00",
+  "updated": "2026-11-19T07:31:00+08:00",
   "thresholds": {
     "normal": "庫存量7日以上",
     "low": "庫存量4-7日",
@@ -16,7 +16,7 @@
       "url": "https://www.tp.blood.org.tw/",
       "stock": {
         "A": "low",
-        "B": "normal",
+        "B": "low",
         "O": "low",
         "AB": "low"
       }
@@ -39,9 +39,9 @@
       "coverage": "中彰投",
       "url": "https://www.tc.blood.org.tw/",
       "stock": {
-        "A": "low",
+        "A": "urgent",
         "B": "normal",
-        "O": "low",
+        "O": "urgent",
         "AB": "low"
       }
     },
