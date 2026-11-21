@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-11-20T17:04:07Z",
+  "fetched_at": "2026-11-21T07:30:10Z",
   "date": "2026-11-21",
   "source": "https://www.blood.org.tw/xcevent?Display=Y",
   "events": [
@@ -980,20 +980,6 @@
       "time_desc": "",
       "address": "苗栗縣後龍鎮車站街127號",
       "address_note": "後龍火車站",
-      "tel": null,
-      "lat": null,
-      "lng": null
-    },
-    {
-      "sid": "0Q300544500109200209",
-      "center_id": "hsinchu",
-      "type": "drive",
-      "name": "中壢區張廖簡宗親會",
-      "date": "2026-11-21",
-      "time": "09:00~17:30",
-      "time_desc": "",
-      "address": "桃園市中壢區中央東路88號16樓",
-      "address_note": "中壢捐血室",
       "tel": null,
       "lat": null,
       "lng": null

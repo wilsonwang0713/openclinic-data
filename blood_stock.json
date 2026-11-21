@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-11-20T17:04:05Z",
+  "fetched_at": "2026-11-21T07:30:07Z",
   "source": "https://www.blood.org.tw/",
-  "updated": "2026-11-20T07:31:00+08:00",
+  "updated": "2026-11-21T07:31:00+08:00",
   "thresholds": {
     "normal": "庫存量7日以上",
     "low": "庫存量4-7日",
@@ -27,9 +27,9 @@
       "coverage": "桃竹苗",
       "url": "https://www.sc.blood.org.tw/",
       "stock": {
-        "A": "urgent",
+        "A": "low",
         "B": "normal",
-        "O": "normal",
+        "O": "low",
         "AB": "normal"
       }
     },
@@ -42,7 +42,7 @@
         "A": "urgent",
         "B": "low",
         "O": "urgent",
-        "AB": "low"
+        "AB": "urgent"
       }
     },
     {
