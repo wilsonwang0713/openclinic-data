@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-11-22T16:29:39Z",
+  "fetched_at": "2026-11-23T07:57:11Z",
   "date": "2026-11-23",
   "source": "https://www.blood.org.tw/xcevent?Display=Y",
   "events": [
@@ -224,20 +224,6 @@
       "time_desc": "",
       "address": "彰化縣彰化市中山路一段348號",
       "address_note": "彰化捐血站",
-      "tel": null,
-      "lat": null,
-      "lng": null
-    },
-    {
-      "sid": "0Q323402517271504105",
-      "center_id": "taichung",
-      "type": "drive",
-      "name": "雲林縣慈元行善協會",
-      "date": "2026-11-23",
-      "time": "09:00~16:00",
-      "time_desc": "",
-      "address": "雲林縣虎尾鎮德興里北平路18號",
-      "address_note": "虎尾天后宮",
       "tel": null,
       "lat": null,
       "lng": null
