@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-11-24T19:35:51Z",
+  "fetched_at": "2026-11-25T08:55:57Z",
   "source": "https://www.blood.org.tw/",
-  "updated": "2026-11-24T07:31:00+08:00",
+  "updated": "2026-11-25T07:31:00+08:00",
   "thresholds": {
     "normal": "庫存量7日以上",
     "low": "庫存量4-7日",
@@ -18,7 +18,7 @@
         "A": "low",
         "B": "normal",
         "O": "low",
-        "AB": "normal"
+        "AB": "low"
       }
     },
     {
@@ -29,7 +29,7 @@
       "stock": {
         "A": "low",
         "B": "normal",
-        "O": "normal",
+        "O": "low",
         "AB": "normal"
       }
     },
@@ -51,7 +51,7 @@
       "coverage": "雲嘉南/高屏/澎東",
       "url": "https://www.ks.blood.org.tw/",
       "stock": {
-        "A": "normal",
+        "A": "low",
         "B": "normal",
         "O": "low",
         "AB": "normal"
